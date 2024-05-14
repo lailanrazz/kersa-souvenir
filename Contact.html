@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>KerSa Souvenir</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href="css/bootstrap.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"/>
+        <link rel="icon" href="img/KERSA.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"/>
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #343a40;
+        }
+
+        p {
+            color: #6c757d;
+        }
+
+        .contact-link {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .contact-icon {
+            font-size: 40px;
+            padding: 20px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .facebook-icon {
+            background-color: #3b5998;
+            color: #fff;
+        }
+
+        .whatsapp-icon {
+            background-color: #25d366;
+            color: #fff;
+        }
+
+        .instagram-icon {
+            background-color: #e1306c;
+            color: #fff;
+        }
+
+        .contact-icon:hover {
+            transform: scale(1.1);
+            opacity: 0.8;
+        }
+
+        p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container text-center mt-5">
+        <h1>Contact Us</h1>
+        <p>Follow us on social media or contact us via WhatsApp</p>
+        <div class="row justify-content-center">
+            <div class="col-md-3 col-sm-6 my-3">
+                <a href="https://www.facebook.com/share/R2h2eRhRfZpeLyPY/?mibextid=LQQJ4d" target="_blank" class="contact-link">
+                    <div class="contact-icon facebook-icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <p>Facebook</p>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 my-3">
+                <a href="https://wa.me/6281220395995" target="_blank" class="contact-link">
+                    <div class="contact-icon whatsapp-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <p>WhatsApp</p>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 my-3">
+                <a href="https://www.instagram.com/kersa.kerajinansunda?igsh=Z2Fvdmo4bmw5OGs5" target="_blank" class="contact-link">
+                    <div class="contact-icon instagram-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <p>Instagram</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const links = document.querySelectorAll('.contact-link');
+            links.forEach(link => {
+                link.addEventListener('click', function() {
+                    alert('Anda akan diarahkan ke halaman ' + this.querySelector('p').textContent);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
